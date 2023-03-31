@@ -1,0 +1,93 @@
+<template>
+    <lightning-card title="City Weather Info" icon-name="utility:salesforce1">
+        <div class="slds-var-p-around_small">
+            <div class="slds-p-horizontal_small">
+                <div class="slds-form" role="list">
+                    <div class="slds-form__row">
+                        <div class="slds-form__item" role="listitem">
+                            <div
+                                class="slds-form-element slds-form-element_edit slds-form-element_readonly slds-form-element_stacked slds-hint-parent">
+                                <span class="slds-form-element__label">Account Name</span>
+                                <div class="slds-form-element__control">
+                                    <div class="slds-form-element__static">
+                                        {name}
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="slds-form-element slds-form-element_edit slds-form-element_readonly slds-form-element_stacked slds-hint-parent">
+                                <span class="slds-form-element__label">City Name</span>
+                                <div class="slds-form-element__control">
+                                    <div class="slds-form-element__static">
+                                        {city}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-form__item" role="listitem">
+                            <div
+                                class="slds-form-element slds-form-element_edit slds-form-element_readonly slds-form-element_stacked slds-hint-parent">
+                                <span class="slds-form-element__label">Temperature</span>
+                                <div class="slds-form-element__control">
+                                    <div class="slds-form-element__static">
+                                        {result.temp} °C
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+ 
+                    <div class="slds-form__row">
+                        <div class="slds-form__item" role="listitem">
+                            <div
+                                class="slds-form-element slds-form-element_edit slds-form-element_readonly slds-form-element_stacked slds-hint-parent">
+                                <span class="slds-form-element__label">Sunrise</span>
+                                <div class="slds-form-element__control">
+                                    <div class="slds-form-element__static">
+                                        {result.sunrise} 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-form__item" role="listitem">
+                            <div
+                                class="slds-form-element slds-form-element_edit slds-form-element_readonly slds-form-element_stacked slds-hint-parent">
+                                <span class="slds-form-element__label">Sunset</span>
+                                <div class="slds-form-element__control">
+                                    <div class="slds-form-element__static">
+                                        {result.sunset} 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+ 
+                    <div class="slds-form__row">
+                        <div class="slds-form__item" role="listitem">
+                            <div
+                                class="slds-form-element slds-form-element_edit slds-form-element_readonly slds-form-element_stacked slds-hint-parent">
+                                <span class="slds-form-element__label">Pressure</span>
+                                <div class="slds-form-element__control">
+                                    <div class="slds-form-element__static">
+                                        {result.pressure} WC
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-form__item" role="listitem">
+                            <div
+                                class="slds-form-element slds-form-element_edit slds-form-element_readonly slds-form-element_stacked slds-hint-parent">
+                                <span class="slds-form-element__label">Humidity</span>
+                                <div class="slds-form-element__control">
+                                    <div class="slds-form-element__static">
+                                        {result.humidity} %
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </lightning-card>
+</template>
